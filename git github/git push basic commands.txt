@@ -1,4 +1,4 @@
-commands to push files/ folders on GitHub
+Commands to push files/ folders to new GitHub Repo
 
 git init
 git add .
@@ -7,3 +7,36 @@ git branch -M main(if branch is master)
 git branch -M master(if branch is main)
 git remote add origin <GitHub link>
 git push -u origin main
+
+
+
+---------->
+If already repository exist and shows message:
+
+To https://github.com/kzoieh/Koncepts.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/kzoieh/Koncepts.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+git init
+git add .
+git commit -m "commit message"
+git branch -M main(if branch is master)
+git branch -M master(if branch is main)
+git remote add origin <GitHub link>
+git fetch origin main:tmp
+git rebase tmp
+git push origin HEAD:main
+
+
+
+---------->
+UPDATE already existing file in GitHub
+git add .
+git status
+git commit -m "comments"
+git push origin main
