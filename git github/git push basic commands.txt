@@ -1,0 +1,9 @@
+commands to push files/ folders on GitHub
+
+git init
+git add .
+git commit -m "commit message"
+git branch -M main(if branch is master)
+git branch -M master(if branch is main)
+git remote add origin <GitHub link>
+git push -u origin main
