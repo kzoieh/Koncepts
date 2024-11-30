@@ -36,7 +36,15 @@ git push origin HEAD:main
 
 ---------->
 UPDATE already existing file in GitHub
+
 git add .
 git status
 git commit -m "comments"
 git push origin main
+
+
+
+---------->
+Change from Disk C (my default git disk) to Disk D 
+
+cd /D
